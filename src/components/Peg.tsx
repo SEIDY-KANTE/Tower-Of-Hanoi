@@ -16,12 +16,16 @@ const Peg = ({ discs, pegIndex, darkMode, onDropDisc }: PegProps) => {
     },
   });
 
+  const dropRef = (element: HTMLDivElement | null) => {
+    if (element) drop(element);
+  };
+
   const pegNames = ["A", "B", "C"];
 
   return (
     <div className="flex flex-col items-center w-full sm:w-auto mb-4 sm:mb-0">
       <div
-        ref={drop}
+        ref={dropRef}
         className={`w-64 h-72 bg-transparent border-b-8 rounded-b-md ${
           darkMode ? "border-white" : "border-slate-900"
         } flex flex-col-reverse items-center relative`}

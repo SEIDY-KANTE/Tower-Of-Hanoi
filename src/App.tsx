@@ -16,6 +16,7 @@ import {
   MAX_DISCS,
   MIN_DISCS,
 } from "./utils/constansts";
+import GameRulesModal from "./components/GameRulesModale";
 
 const App = () => {
   const [numDiscs, setNumDiscs] = useState(MIN_DISCS);
@@ -25,6 +26,7 @@ const App = () => {
   const [autoSolving, setAutoSolving] = useState(INITIAL_AUTO_SOLVING);
   const [autoSteps, setAutoSteps] = useState<number[][]>(INITIAL_AUTO_STEPS);
   const [stepIndex, setStepIndex] = useState(INITIAL_STEP_INDEX);
+  const [showRules, setShowRules] = useState(true);
 
   const { pegs, moves, expectedMoves, resetGame, moveDisc } =
     useGameManager(numDiscs);
@@ -117,11 +119,13 @@ const App = () => {
     <div
       className={`min-h-screen p-5 relative transition-all flex flex-col items-center justify-start overflow-x-hidden w-full
         ${
-        darkMode ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-900"
-      }`}
+          darkMode ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-900"
+        }`}
     >
+      <GameRulesModal show={showRules} onClose={() => setShowRules(false)} />
+
       <h1 className="text-center font-bold text-4xl sm:text-5xl md:text-6xl uppercase mb-4 py-10">
-      Tower of Hanoi
+        Tower of Hanoi
       </h1>
       <GameBoard pegs={pegs} darkMode={darkMode} onDropDisc={moveDisc} />
       <Controls
