@@ -1,0 +1,12 @@
+export const MIN_DISCS = 3;
+export const MAX_DISCS = 10;
+export const INITIAL_PEGS = [[3, 2, 1], [], []];
+export const INITIAL_MOVES = 0;
+export const INITIAL_EXPECTED_MOVES = 7;
+export const INITIAL_NUM_DISCS = 3;
+export const INITIAL_DARK_MODE = true;
+export const INITIAL_SOUND_ENABLED = false;
+export const INITIAL_PREPARING_STEPS = false;
+export const INITIAL_AUTO_SOLVING = false;
+export const INITIAL_AUTO_STEPS = [];
+export const INITIAL_STEP_INDEX = 0;
