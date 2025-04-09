@@ -100,8 +100,8 @@ npm run dev
 [![Static Badge](https://img.shields.io/badge/UNLICENSE-UNLICENSE_green?logo=unlicense&label=LICENSE&link=https%3A%2F%2Fgithub.com%2FSEIDY-KANTE%2Ftower-of-hanoi%2Fblob%2Fmain%2FLICENSE)](https://img.shields.io/badge/UNLICENSE-UNLICENSE_yellow?logo=unlicense&label=LICENSE&link=https%3A%2F%2Fgithub.com%2FSEIDY-KANTE%2Ftower-of-hanoi%2Fblob%2Fmain%2FLICENSE
 )
 
-Distributed under the MIT License. See [```LICENSE```](#https://github.com/SEIDY-KANTE/tower-of-hanoi/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See <a href="https://github.com/SEIDY-KANTE/tower-of-hanoi/blob/main/LICENSE">```LICENSE```</a> for more information.
 
 ---
-## DEMO LINK  [Click here 🎮](#https://tower-of-hanoi-0vqn.onrender.com)
-  <!-- <a href="https://tower-of-hanoi-0vqn.onrender.com">```Click here 🎮```</a> -->
+## DEMO LINK 
+  <a href="https://tower-of-hanoi-0vqn.onrender.com">```Click here 🎮```</a>
